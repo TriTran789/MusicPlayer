@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+.player {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.header p {
+    color: #e43476;
+    text-align: center;
+    font-weight: 700x;
+}
+
+.header h2 {
+    text-align: center;
+}
+
+.cd {
+    background-image: url(./assets/image/duongtoichoemve.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 13rem;
+    width: 13rem;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+.line {
+    height: 5px;
+    width: 80%;
+    background-color: #d3d3d3;
+    margin-left: 10%;
+    margin-right: 10%;
+    /* transition: all 0.1s ease; */
+    transition: opacity 0.2s;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    outline: none;
+}
+
+.btn {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.btn span {
+    font-size: 1.5rem;
+    margin: 1.75rem;
+}
+
+.player .fa-play {
+    font-size: 2rem;
+    background-color: #ed235f;
+    border-radius: 50%;
+    color: white;
+    margin: 0.75rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+    display: inline-block;
+} 
+
+.player .fa-pause {
+    font-size: 2rem;
+    background-color: #ed235f;
+    border-radius: 50%;
+    color: white;
+    margin: 0.75rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+    display: none;
+} 
+
+.fa-rotate-right.active {
+    color: #ed235f;
+}
+
+.fa-shuffle.active {
+    color: #ed235f;
+}
+
+.play-list {
+    background-color: #f3f2f7;
+    padding-top: 0.5rem;
+    padding-bottom: .5rem;
+    margin-top: 400px;
+}
+
+.song {
+    margin: 0.75rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    padding: 0.5rem 0;
+    border-radius: 10px;
+}
+
+.song.active {
+    background-color: #e43476;
+}
+
+.song.active h3 {
+    color: #fff;
+}
+
+.song-img {
+    height: 4rem;
+    width: 4rem;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin: 0 1rem;
+}
+
+.song-content {
+    margin-top: 0.75rem;
+}
+
+.song-content p {
+    color: rgba(0, 0, 0, 0.5);
+}

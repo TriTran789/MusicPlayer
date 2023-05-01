@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+    <title>Music Player</title>
+</head>
+<body>
+    <div class="main">
+        <div class="player playing">
+            <div class="header">
+                <p>Now playing</p>
+                <h2>Name song</h2>
+            </div>
+
+            <div class="cd-box">
+                <div class="cd"></div>
+                <div class="btn">
+                    <span class="fa fa-rotate-right"></span>
+                    <span class="fa fa-backward-step"></span>
+                    <span class="fa fa-play"></span>
+                    <span class="fa fa-pause"></span>
+                    <span class="fa fa-forward-step"></span>
+                    <span class="fa fa-shuffle"></span>
+                </div>
+                <input class="line" type="range" value="0" step="1" min="0" max="100">
+            </div>
+            
+            <audio class="audio" src=""></audio>
+
+        </div>
+
+        <div class="play-list">
+            
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
